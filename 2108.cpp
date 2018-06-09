@@ -35,12 +35,13 @@ int main() {
             cnt.push_back(pair<int, int>(x, 1));
         }
     }
-    sort(cnt.begin(), cnt.end(), [](pair<int, int> a, pair<int, int> b) {
-        if (a.second == b.second) {
-            return a.first < b.first;
-        } else {
-            return a.second > b.second;
-        }
+    sort(cnt.begin(), cnt.end(),
+        [](const pair<int, int> &a, const pair<int, int> &b) {
+            if (a.second == b.second) {
+                return a.first < b.first;
+            } else {
+                return a.second > b.second;
+            }
     });
     if ((cnt.size() >= 1) && (cnt[0].second == cnt[1].second)) {
         mode = cnt[1].first;
