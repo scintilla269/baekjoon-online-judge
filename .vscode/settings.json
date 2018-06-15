@@ -38,6 +38,8 @@
         "xutility": "cpp",
         "vector": "cpp",
         "algorithm": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "random": "cpp",
+        "deque": "cpp"
     }
 }
