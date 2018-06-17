@@ -40,6 +40,8 @@
         "algorithm": "cpp",
         "chrono": "cpp",
         "random": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "ratio": "cpp",
+        "list": "cpp"
     }
 }
