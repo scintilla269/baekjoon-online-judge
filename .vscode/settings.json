@@ -51,6 +51,7 @@
         "stack": "cpp",
         "xlocmon": "cpp",
         "xloctime": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "array": "cpp"
     }
 }
