@@ -53,6 +53,7 @@
         "xloctime": "cpp",
         "sstream": "cpp",
         "array": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "xhash": "cpp"
     }
 }
