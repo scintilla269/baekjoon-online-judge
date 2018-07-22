@@ -54,6 +54,11 @@
         "sstream": "cpp",
         "array": "cpp",
         "xtree": "cpp",
-        "xhash": "cpp"
+        "xhash": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp",
+        "map": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp"
     }
 }
