@@ -7,12 +7,12 @@ int main() {
     cin >> a;
     b = a;
     a <<= 4;
-    for (int carry = 0, i = 0; i < 1005; ++i) {
+    for (int carry = 0, i = 0; i < sum.size(); ++i) {
         sum[i] = a[i] ^ b[i] ^ carry;
         carry = (a[i] & b[i]) | (a[i] & carry) | (b[i] & carry);
     }
     int idx;
-    for (idx = 1004; idx >= 0; --idx) {
+    for (idx = sum.size() - 1; idx > 0; --idx) {
         if (sum[idx]) {
             break;
         }
