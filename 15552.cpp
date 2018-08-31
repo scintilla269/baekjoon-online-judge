@@ -2,11 +2,10 @@
 using namespace std;
 
 int main() {
-    int t, a, b;
-    cin.tie(NULL);
+    cin.tie(nullptr);
     ios::sync_with_stdio(false);
-    cin >> t;
-    for (; t > 0; --t) {
+    int t, a, b;
+    for (cin >> t; t > 0; --t) {
         cin >> a >> b;
         cout << a + b << '\n';
     }
