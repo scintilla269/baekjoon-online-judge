@@ -1,4 +1,4 @@
-#include <iostream>
+#include <cstdio>
 #include <vector>
 using namespace std;
 
@@ -23,25 +23,14 @@ bool checkParity(vector<int> &vec) {
 
 int main() {
     int n;
-    cin >> n;
-    vector<int> A, B;
-    A.reserve(n);
-    B.reserve(n);
-    for (int i = 0; i < n; ++i) {
-        int num;
-        cin >> num;
-        A.push_back(num);
+    scanf("%d", &n);
+    vector<int> A(n), B(n);
+    for (auto &x : A) {
+        scanf("%d", &x);
     }
-    for (int i = 0; i < n; ++i) {
-        int num;
-        cin >> num;
-        B.push_back(num);
+    for (auto &x : B) {
+        scanf("%d", &x);
     }
-
-    if (checkParity(A) == checkParity(B)) {
-        cout << "Possible";
-    } else {
-        cout << "Impossible";
-    }
+    printf("%sossible\n", checkParity(A) == checkParity(B) ? "P" : "Imp");
     return 0;
 }
